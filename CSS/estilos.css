@@ -1,0 +1,263 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+header {
+    background-color: #0078d4;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #0078d4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #0078d4;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+ul li a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Formulario de Inscripción */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form input[type="submit"] {
+    background-color: #0078d4;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+form input[type="submit"]:hover {
+    background-color: #005a8a;
+}
+
+/* Tabla de Inscritos */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #0078d4;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+}
+
+/* Estilos para consulta_inscritos.php */
+#consulta-inscritos {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#consulta-inscritos h2 {
+    color: #0078d4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#consulta-inscritos table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+#consulta-inscritos table th,
+#consulta-inscritos table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#consulta-inscritos table th {
+    background-color: #0078d4;
+    color: white;
+    font-weight: bold;
+}
+
+#consulta-inscritos table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#consulta-inscritos table tr:hover {
+    background-color: #e0e0e0;
+}
+
+#consulta-inscritos .boton-regresar {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #0078d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+}
+
+#consulta-inscritos .boton-regresar:hover {
+    background-color: #005a8a;
+}
+
+/* Centrar los videos */
+.video-container {
+    display: flex;
+    justify-content: center; /* Centra el contenido en el eje horizontal */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.video-container iframe {
+    max-width: 100%; /* Hace que el iframe se ajuste al tamaño del contenedor */
+    height: 100; /* Mantiene la proporción de aspecto */
+}
+
+/* Hacer los videos responsivos */
+@media (max-width: 768px) {
+    .video-container iframe {
+        width: 90%; /* Reduce el tamaño del iframe a un 90% en pantallas pequeñas */
+        height: 315px; /* Ajusta la altura de los videos en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .video-container iframe {
+        width: 100%; /* Los videos ocupan todo el ancho en pantallas muy pequeñas */
+        height: 250px; /* Ajusta aún más la altura en pantallas muy pequeñas */
+    }
+}
